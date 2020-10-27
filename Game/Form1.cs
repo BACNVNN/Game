@@ -76,6 +76,7 @@ namespace Game
             Adder.Enabled = true;
             Multiplyer.Enabled = true;
             tip.Visible = true;
+            Num.Text = "0";
         }
     }
 }
