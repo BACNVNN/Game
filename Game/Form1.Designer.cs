@@ -78,7 +78,7 @@
             this.Num.ReadOnly = true;
             this.Num.Size = new System.Drawing.Size(100, 20);
             this.Num.TabIndex = 3;
-            this.Num.Text = "0";
+            this.Num.Text = "1";
             this.Num.TextChanged += new System.EventHandler(this.Num_TextChanged);
             // 
             // Goal

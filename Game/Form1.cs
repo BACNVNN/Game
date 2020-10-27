@@ -26,26 +26,24 @@ namespace Game
 
         private void Adder_Click(object sender, EventArgs e)
         {
+            count++; // тик счетчика
+
             int a = int.Parse(Num.Text); // расшифровка строки из текстбокса
             a += 1; // операция кнопки
             
             Num.Text = a.ToString(); // запись в число игрока
-
-            
-            count++; // тик счетчика
            
         }
 
         private void Multiplyer_Click(object sender, EventArgs e)
         {
+            count++; // тик счетчика
+
             int a = int.Parse(Num.Text); // расшифровка строки из текстбокса
             a *= 2; // операция кнопки
             
             Num.Text = a.ToString(); // запись в число игрока
 
-
-            count++; // тик счетчика
-            
         }
 
         private void Num_TextChanged(object sender, EventArgs e) // сравнение чисел
@@ -67,7 +65,7 @@ namespace Game
 
         }
 
-        private void Starter_Click(object sender, EventArgs e)
+        private void Starter_Click(object sender, EventArgs e) // Кнопка старт
         {
             Random rnd = new Random(); // создание случайного числа
             int g = rnd.Next(2, 1000);
@@ -76,7 +74,8 @@ namespace Game
             Adder.Enabled = true;
             Multiplyer.Enabled = true;
             tip.Visible = true;
-            Num.Text = "0";
+            Num.Text = "1";
+            count = 0;
         }
     }
 }
