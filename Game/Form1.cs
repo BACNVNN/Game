@@ -33,7 +33,7 @@ namespace Game
 
             
             count++; // тик счетчика
-            Counter.Text = count.ToString();
+           
         }
 
         private void Multiplyer_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Game
 
            
             count++; // тик счетчика
-            Counter.Text = count.ToString();
+            
         }
 
         private void Num_TextChanged(object sender, EventArgs e)
@@ -55,13 +55,13 @@ namespace Game
             {
                 Adder.Enabled = false;
                 Multiplyer.Enabled = false;
-                MessageBox.Show("Победа");
+                MessageBox.Show("Всего ходов : " + count, "Победа");
             }
             if (int.Parse(Num.Text) > int.Parse(Goal.Text))
             {
                 Adder.Enabled = false;
                 Multiplyer.Enabled = false;
-                MessageBox.Show("Поражение");
+                MessageBox.Show("Всего ходов : " + count, "Поражение");
             }
                 
 

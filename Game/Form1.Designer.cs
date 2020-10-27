@@ -35,8 +35,6 @@
             this.Goal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Counter = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.Starter = new System.Windows.Forms.Button();
             this.tip = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -111,31 +109,12 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Нужное число";
             // 
-            // Counter
-            // 
-            this.Counter.Location = new System.Drawing.Point(233, 121);
-            this.Counter.Name = "Counter";
-            this.Counter.ReadOnly = true;
-            this.Counter.Size = new System.Drawing.Size(100, 20);
-            this.Counter.TabIndex = 7;
-            this.Counter.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(193, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Число ваших попыток";
-            // 
             // Starter
             // 
             this.Starter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Starter.Location = new System.Drawing.Point(12, 205);
+            this.Starter.Location = new System.Drawing.Point(142, 125);
             this.Starter.Name = "Starter";
-            this.Starter.Size = new System.Drawing.Size(390, 33);
+            this.Starter.Size = new System.Drawing.Size(277, 33);
             this.Starter.TabIndex = 9;
             this.Starter.Text = "Начать игру";
             this.Starter.UseVisualStyleBackColor = true;
@@ -146,7 +125,7 @@
             this.tip.AutoSize = true;
             this.tip.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tip.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tip.Location = new System.Drawing.Point(68, 185);
+            this.tip.Location = new System.Drawing.Point(139, 98);
             this.tip.Name = "tip";
             this.tip.Size = new System.Drawing.Size(285, 17);
             this.tip.TabIndex = 10;
@@ -157,11 +136,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 251);
+            this.ClientSize = new System.Drawing.Size(424, 171);
             this.Controls.Add(this.tip);
             this.Controls.Add(this.Starter);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Counter);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Goal);
@@ -169,9 +146,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Multiplyer);
             this.Controls.Add(this.Adder);
-            this.MaximumSize = new System.Drawing.Size(435, 290);
+            this.MaximumSize = new System.Drawing.Size(440, 210);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(435, 290);
+            this.MinimumSize = new System.Drawing.Size(440, 210);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " GAME";
@@ -189,8 +166,6 @@
         private System.Windows.Forms.TextBox Goal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Counter;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Starter;
         private System.Windows.Forms.Label tip;
     }
