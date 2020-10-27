@@ -29,7 +29,7 @@ namespace Game
             int a = int.Parse(Num.Text); // расшифровка строки из текстбокса
             a += 1; // операция кнопки
             
-            Num.Text = a.ToString();
+            Num.Text = a.ToString(); // запись в число игрока
 
             
             count++; // тик счетчика
@@ -41,14 +41,14 @@ namespace Game
             int a = int.Parse(Num.Text); // расшифровка строки из текстбокса
             a *= 2; // операция кнопки
             
-            Num.Text = a.ToString();
+            Num.Text = a.ToString(); // запись в число игрока
 
-           
+
             count++; // тик счетчика
             
         }
 
-        private void Num_TextChanged(object sender, EventArgs e)
+        private void Num_TextChanged(object sender, EventArgs e) // сравнение чисел
         {
 
             if ((Num.Text) == (Goal.Text))
@@ -71,7 +71,7 @@ namespace Game
         {
             Random rnd = new Random(); // создание случайного числа
             int g = rnd.Next(2, 1000);
-            Goal.Text = g.ToString(); // запись его в текстбокс
+            Goal.Text = g.ToString(); // запись его в текстбокс в качестве желаемого
 
             Adder.Enabled = true;
             Multiplyer.Enabled = true;
